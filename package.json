@@ -1,0 +1,42 @@
+{
+  "name": "ntask",
+  "version": "1.0.0",
+  "description": "Estudo sobre o curso de Raphel Lima e livro de Caio Ribeiro Pereira",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon app",
+    "test": "NODE_ENV=test mocha --opts test/mocha.opts test/tests.js",
+    "integration-test": "NODE_ENV=test mocha --opts tests/integration/config/mocha.opts ./tests/integration/integration.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
+    "express": "^4.15.3",
+    "jwt-simple": "^0.5.1",
+    "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "pg": "^6.4.0",
+    "sequelize": "^4.2.1",
+    "testdouble": "^3.2.2",
+    "ts-node": "^3.1.0",
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^1.0.0",
+    "@types/chai": "^4.0.1",
+    "@types/jwt-simple": "^0.5.33",
+    "@types/mocha": "^2.2.41",
+    "@types/passport": "^0.3.3",
+    "@types/passport-jwt": "^2.0.21",
+    "@types/supertest": "^2.0.1",
+    "babel-register": "^6.5.2",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  }
+}
